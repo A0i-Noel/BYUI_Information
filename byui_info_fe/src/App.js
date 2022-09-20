@@ -1,8 +1,10 @@
 import './Styles/App.css';
 
+import {Navbar, Home} from "./Pages";
+
 function App() {
   return (
- <h1>blank</h1>
+    <Navbar />
   );
 }
 
