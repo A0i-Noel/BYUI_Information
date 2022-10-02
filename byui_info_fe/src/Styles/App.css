@@ -1,24 +1,124 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Noto+Sans+JP:wght@300;500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: "Lato", sans-serif;
+#root {
+  width: 100%;
+  position: relative;
+}
+
+h1, h2, h3, h4, p {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .navbarContainer {
-  background-color: aqua;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
   height: 13vh;
-  position: relative;
+  position: absolute;
   justify-content: center;
   display: flex;
+  flex-direction: row;
   align-items: flex-end;
+  z-index: 1;
 }
 .navbarContainer .logo {
+  width: 50%;
+  height: 100%;
   justify-content: center;
   margin-left: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbarContainer .logo h1 {
+  font-size: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.navbarContainer .navBtn {
+  width: 50%;
+  height: 100%;
+}
+.navbarContainer .navBtn ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  vertical-align: middle;
+  line-height: 13vh;
+}
+.navbarContainer .navBtn ul li a {
+  border: none;
+  font-size: 100%;
+  background-color: transparent;
+  padding: 3px;
+  text-decoration: none;
+  color: #000;
+}
+.navbarContainer .navBtn ul li a:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.homeContainer {
+  width: 100%;
+  margin: 0 auto;
+}
+.homeContainer .heroBannerContainer {
+  height: 90vh;
+  position: relative;
+  width: 100%;
+  background: url(../Assets/BYUI_HeroBanner2.JPG) center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeContainer .heroBannerContainer h1 {
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.topicContainer {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.topicContainer h2 {
+  grid-row: 1/2;
+  background: linear-gradient(transparent 60%, #48bfe3 60%);
+  width: 80%;
+}
+.formContainer {
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+}
+.formContainer form {
+  width: 80%;
+  padding: 15%;
+  display: flex;
+  flex-direction: column;
+}
+.formContainer form button {
+  margin-top: 30px;
 }/*# sourceMappingURL=App.css.map */

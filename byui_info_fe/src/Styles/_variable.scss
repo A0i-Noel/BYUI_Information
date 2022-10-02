@@ -2,3 +2,24 @@
   width: 90%;
   margin: $verticalMargin auto;
 }
+
+
+@mixin responsivenessContainer ($verticalMargin) {
+  width: 100%;
+  max-width: 900px;
+  margin: $verticalMargin auto;
+  padding: 10px;
+}
+
+@mixin letterCentering {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin subtitleLine ($color){
+  background: linear-gradient(transparent 60%, $color 60%);
+  width: 80%;
+}
+
+$subtitleColor:#48bfe3;
